@@ -1,0 +1,74 @@
+.class-description
+  font-size: .9em
+  margin: 0 auto
+  max-width: 1000px
+
+  h5
+    text-align: center
+
+.class-details
+  display: flex
+  font-size: .9em
+  margin: 30px auto 0
+  max-width: 1000px
+  width: 100%
+  +medium-device
+    display: flex
+    flex-direction: column
+
+  .class-details-info
+    margin: 0 auto
+    width: 75%
+    +medium-device
+      width: 100%  
+
+    li
+      margin-bottom: 10px
+  
+  .button-container
+    align-items: center
+    display: flex
+    margin: 15px 0
+    +large-device
+      flex-direction: column
+    +medium-device
+      flex-direction: row
+    +small-device
+      flex-direction: column
+
+    p
+      margin-bottom: 0
+
+    .button
+      border: 1px solid $brand-color
+      border-radius: 50px
+      color: $black
+      margin: 15px 0 15px 20px
+      padding: 15px
+      &:hover
+        color: $brand-color
+        background-color: rgba(255, 255, 255, 0.1)
+      +large-device
+        margin: 15px 0
+      +medium-device
+        margin: 15px 0 15px 20px
+      +small-device
+        margin: 15px 0
+
+  .class-image
+    align-self: flex-start
+    margin: 0 20px 0 10px
+    width: 400px
+    +large-device
+      margin-right: 0
+    +medium-device
+      align-self: center
+      margin-top: 30px
+      width: 100%
+    +small-device
+      margin: 0 auto
+      position: relative
+
+  
+
+

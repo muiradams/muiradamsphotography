@@ -1,0 +1,65 @@
+.home-header
+  background-image: url("../img/header-background.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  position: relative
+  width: 100%
+  +clearfix
+
+.overlay
+  background: $header-gradient
+  bottom: 0
+  left: 0
+  opacity: 0.25
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 0
+  +large-device
+    background: $black
+    opacity: 0.5
+
+#hero
+  text-align: right
+  margin-right: 30px
+  position: absolute
+  right: 0px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 1
+  +clearfix
+  p
+    color: $white
+    font-weight: 100
+    text-transform: uppercase
+    &:nth-child(1)
+      font-size: .75em
+    
+    &:nth-child(2)
+      font-size: 4em
+      border-top: solid 1.5px #FFF
+      border-bottom: solid 1.5px #FFF
+      margin-bottom: 10px
+      +small-device
+        font-size: 3em
+    
+    &:nth-child(3)
+      margin-bottom: 30px
+      +small-device
+        font-size: 0.9em
+
+  +large-device
+    margin: 0 auto
+    position: relative
+    text-align: center
+    top: 70%
+
+#header-button
+  color: $white
+  border: 1px solid $brand-color
+  border-radius: 50px
+  padding: 15px
+  &:hover
+    color: $brand-color
+    background-color: rgba(255, 255, 255, 0.1)

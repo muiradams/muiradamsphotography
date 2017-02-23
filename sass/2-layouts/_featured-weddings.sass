@@ -1,0 +1,23 @@
+#featured-weddings-container
+  display: flex
+  justify-content: space-around
+  margin: 0 auto
+  max-width: 1200px
+  +small-device
+    flex-direction: column
+
+  p
+    font-size: .75em
+    font-weight: 400
+    text-align: center
+  
+  div
+    margin: 5px
+    text-align: center
+
+  img
+    +expand-image-on-hover
+    max-width: 350px
+    width: 100%
+    +small-device
+      width: 224px

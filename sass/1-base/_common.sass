@@ -1,0 +1,89 @@
+body
+  font-family: $main-font
+  font-weight: 200
+  letter-spacing: 1.5px
+  margin: 0
+
+h1,h2,h3,h4
+  font-family: $main-font
+  font-weight: 600
+
+h2,h4
+  text-align: center
+
+h1
+  font-size: 1.5em
+
+h2
+  font-size: 2.75em
+  font-weight: 200
+
+h3
+  font-size: 1em
+
+h4
+  font-size: 0.75em
+  font-weight: 200
+
+p
+  color: $gray
+
+a
+  color: $gray
+  &:focus
+    color: $brand-color
+  &:hover
+    color: $brand-color
+
+i
+  color: $brand-color
+
+a
+  i
+    &:hover
+      color: shade($brand-color, 10%)
+
+#{$all-buttons}
+  background: $brand-color
+  &:focus
+    background: shade($brand-color, 10%)
+  &:hover
+    background: shade($brand-color, 10%)
+
+section
+  margin: 0 auto 30px
+  padding: 0 30px
+  position: relative
+  +clearfix
+  &:first-of-type
+    padding-top: 30px
+  &:nth-of-type(2)
+    background: lighten($brand-color, 27%)
+    padding-bottom: 30px
+    padding-top: 40px
+  &:last-of-type
+    background: lighten($brand-color, 27%)
+    border-bottom: solid 1px $black
+    margin-bottom: 0
+    padding-top: 40px
+
+
+.link-to-section
+  height: 100px
+  position: absolute
+  top: -110px
+
+.link-to-first-section
+  @extend .link-to-section
+  top: -80px
+
+.link-to-second-section
+  @extend .link-to-section
+  top: -79px
+
+.link-to-final-section
+  @extend .link-to-section
+  top: -70px
+
+.grid-wrapper
+  +outer-container

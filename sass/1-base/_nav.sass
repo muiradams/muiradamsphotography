@@ -1,0 +1,85 @@
+nav
+  width: 100%
+  padding: 10px 30px
+  position: fixed
+  height: 80px
+  transition: all 0.5s ease
+  z-index: 100
+
+  ul
+    display: flex
+    justify-content: flex-end
+    +large-device
+      background: $nav-background
+      display: none
+      flex-direction: column
+      padding: 20px
+      position: absolute
+      top: 80px
+      right: 25px
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 10px
+  
+  li
+    align-self: center
+    line-height: 60px
+    text-align: center
+    white-space: nowrap
+
+    a
+      color: $white
+      font-size: .9em
+      +large-device
+        color: $black
+
+.dot
+  width: 40px
+  height: 60px
+  font-size: .5em
+  +large-device
+    display: none
+
+.navigation-menu-button
+  float: right
+  line-height: 70px
+  display: none
+  +large-device
+    display: inherit
+
+.nav-background
+  transition: all 0.5s ease
+  background: $nav-background
+
+.featured-nav
+  background: $nav-background
+  
+  a
+    color: $black
+    &:hover
+      color: $brand-color
+
+.nav-links-dark
+  color: $black
+
+.brand
+  +hide-text
+  background-repeat: no-repeat
+  background-image: url("../img/muir-logo.png")
+  background-size: 330px 60px
+  float: left
+  height: 60px
+  width: 330px
+  +small-device
+    background-position: center
+    background-size: 100%
+    height: 60px
+    width: 75%
+
+  +retina
+    background-image: url("../img/muir-logo_2x.png")
+    background-size: 330px 60px
+    +small-device
+      background-position: center
+      background-size: 100%
+      height: 60px
+      width: 75%
